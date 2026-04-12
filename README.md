@@ -4,13 +4,13 @@ This project is a web-based enzyme database system developed as part of an acade
 
 It allows users to store, manage, and retrieve enzyme-related information using a MySQL database and PHP-based web interface.
 
-The system demonstrates database design, CRUD operations, and integration of backend with frontend.
+The system demonstrates database design and integration of backend with frontend.
 
 --------------------------------------------------
 
 **Features**
 
-- Search enzymes by name  
+- Search enzymes by name or ID
 - View enzyme details (enzyme ID, EC number, function, UniProt ID, molecular weight)  
 - Insert new enzyme records into the database  
 - Update existing enzyme records  
@@ -57,7 +57,7 @@ enzymebase/
    - Import the SQL file  
 
 5. Run the project:  
-   http://localhost/enzymebase  
+   http://localhost/enzymebase/index.php  
 
 --------------------------------------------------
 
@@ -80,7 +80,7 @@ Enables removal of enzyme records with confirmation.
 **Learning Outcomes**
 
 - Designing relational database schemas  
-- Implementing CRUD operations using PHP and MySQL  
+- Implementing PHP and MySQL  
 - Handling user input and form submission  
 - Connecting backend database with frontend interface  
 - Structuring a web-based project  
