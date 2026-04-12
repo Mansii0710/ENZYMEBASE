@@ -87,7 +87,7 @@ Enables removal of enzyme records with confirmation.
 
 --------------------------------------------------
 
-**Authors**
+**Contributors**
 
 Mansi Parihar  
 Sahana Udupa  
