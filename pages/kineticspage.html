@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kinetics</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .header-box {
+      background-color: #0077cc;
+      border-bottom: 4px solid #005fa3;
+      padding: 25px 10px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .header-title {
+      font-size: 52px;
+      color: white;
+      margin: 0;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    .heading {
+      font-size: 52px;
+      color: #0077cc;
+      text-align: center;
+      margin-top: 20px;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    .subheading {
+      font-size: 20px;
+      color: #0077cc;
+      text-align: center;
+      margin-top: 10px;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    .search-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .search-container form {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .search-container input[type="text"] {
+      background-color: #ffffff;
+      color: #333;
+      padding: 15px;
+      border: 2px solid #0077cc;
+      border-radius: 5px;
+      font-size: 16px;
+      width: 250px;
+    }
+
+    .search-container select {
+      padding: 15px;
+      border: 2px solid #0077cc;
+      border-radius: 5px;
+      font-size: 16px;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    .search-container button {
+      background-color: #0077cc;
+      color: white;
+      padding: 15px 18px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-family: 'Trebuchet MS', sans-serif;
+      cursor: pointer;
+    }
+
+    .facts-section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-left: 6px solid #0077cc;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    footer {
+      text-align: center;
+      background-color: #e1f0ff;
+      font-size: 14px;
+      color: #555;
+      margin-top: auto;
+      padding: 20px 0;
+    }
+
+    .info1 {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: nowrap;
+      font-family: 'Trebuchet MS', sans-serif;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .icon-text {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .icon-text img {
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-box">
+    <div class="header-title">ENZYMEBASE</div>
+  </div>
+
+  <main>
+    <div class="heading">KINETICS</div>
+    <div class="subheading">Discover the speed limits of enzymes and how they race through biochemical reactions</div>
+
+    <!-- ✅ FIXED SEARCH -->
+    <div class="search-container">
+      <form action="../search/search_kinetics.php" method="GET">
+        <input type="text" name="query" placeholder="Search value..." required>
+
+        <select name="column">
+          <option value="kin_id">Kinetics ID</option>
+          <option value="enzyme_id">Enzyme ID</option>
+          <option value="org_id">Organism ID</option>
+          <option value="substrate">Substrate</option>
+          <option value="reac_id">Reaction ID</option>
+        </select>
+
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+    <div class="facts-section">
+      <h3>Did You Know?</h3>
+      <p>Enzyme kinetics reveals how fast enzymes work.</p>
+      <p>Understanding kinetics helps in drug design and biotechnology.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="info1">
+      <!-- ✅ FIXED IMAGE PATHS -->
+      <div class="icon-text">
+        <img src="../images/call.png">
+        <span>+91 94XXXXXX70</span>
+      </div>
+
+      <div class="icon-text">
+        <img src="../images/email.png">
+        <span>enzymebasequeries@gmail.com</span>
+      </div>
+
+      <div class="icon-text">
+        <img src="../images/address.png">
+        <span>Manipal, India</span>
+      </div>
+
+      <div class="icon-text">
+        <img src="../images/linkedin.png">
+        <span>ENZYMEBASE</span>
+      </div>
+    </div>
+
+    <p>&copy; 2025 ENZYMEBASE Project</p>
+  </footer>
+
+</body>
+</html>

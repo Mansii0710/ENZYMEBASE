@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"> <!-- ✅ FIXED SYMBOL ISSUE -->
+  <title>ENZYMEBASE - Enzyme Page</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .header-box {
+      background-color: #0077cc;
+      border-bottom: 4px solid #005fa3;
+      padding: 25px 10px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .header-title {
+      font-size: 52px;
+      color: white;
+      margin: 0;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    .heading {
+      font-size: 52px;
+      color: #0077cc;
+      text-align: center;
+      margin-top: 20px;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    .subheading {
+      font-size: 20px;
+      color: #0077cc;
+      text-align: center;
+      margin-top: 10px;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .action-button {
+      background-color: #0077cc;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 5px;
+      font-size: 18px;
+      text-decoration: none;
+    }
+
+    .facts-section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-left: 6px solid #0077cc;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #e1f0ff;
+      margin-top: auto;
+      padding: 20px 0;
+    }
+
+    .info1 {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .icon-text {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .icon-text img {
+      height: 20px;
+    }
+
+    main {
+      flex-grow: 1;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="header-box">
+  <div class="header-title">ENZYMEBASE</div>
+</div>
+
+<main>
+
+<div class="heading">ENZYMES</div>
+<div class="subheading">Add, view, and manage enzymes with precision and simplicity</div>
+
+<div class="button-container">
+  <!-- ✅ FIXED INSERT LINK -->
+  <a href="../insert/insert_enzyme.php" class="action-button">+ Add New Enzyme</a>
+
+  <!-- ✅ KEEPING YOUR HTML FILE -->
+  <a href="../insert/view-enzyme.php" class="action-button">View existing enzymes</a>
+</div>
+
+<div class="facts-section">
+  <!-- ✅ REMOVED EMOJI -->
+  <h3>Did you know?</h3>
+  <p>Enzymes can catalyze reactions millions of times faster than without them.</p>
+</div>
+
+</main>
+
+<footer>
+<div class="info1">
+
+<div class="icon-text">
+<img src="../images/call.png">
+<span>+91 94XXXXXX70</span>
+</div>
+
+<div class="icon-text">
+<img src="../images/email.png">
+<span>enzymebasequeries@gmail.com</span>
+</div>
+
+<div class="icon-text">
+<img src="../images/address.png">
+<span>Manipal, India</span>
+</div>
+
+<div class="icon-text">
+<img src="../images/linkedin.png">
+<span>ENZYMEBASE</span>
+</div>
+
+</div>
+
+<p>&copy; 2025 ENZYMEBASE Project</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hexokinase | Enzyme Info</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f4f8;
+      margin: 5px 10px;
+      padding: 0;
+      color: #333;
+    }
+
+    /* ✅ ADDED HEADER (CONSISTENT WITH PROJECT) */
+    .main-header {
+      background-color: #0077cc;
+      padding: 15px;
+      text-align: center;
+      color: white;
+      font-size: 30px;
+      font-family: 'Trebuchet MS';
+    }
+
+    .header-box {
+      background-color: #fff;
+      border-bottom: 3px solid #0077cc;
+      padding: 10px 15px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 10px;
+    }
+
+    .header-title {
+      font-size: 28px;
+      color: #0077cc;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .download-button {
+      position: absolute;
+      right: 15px;
+      top: 12px;
+      padding: 7px 14px;
+      background-color: #0077cc;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .content {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 15px 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      flex-direction: row-reverse;
+    }
+
+    .image-container {
+      flex-shrink: 0;
+      text-align: center;
+      width: 400px;
+    }
+
+    .image-container img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: block;
+    }
+
+    .image-container figcaption {
+      font-weight: bold;
+      font-size: 14px;
+      color: #0077cc;
+      margin-top: 8px;
+    }
+
+    .text-content {
+      flex: 1;
+    }
+
+    h2 {
+      color: #0077cc;
+      font-size: 20px;
+      margin: 15px 0 5px 0;
+    }
+
+    p {
+      font-size: 15px;
+      margin: 0 0 10px 0;
+      line-height: 1.4;
+    }
+
+    ul {
+      margin: 0 0 10px 20px;
+      font-size: 15px;
+      line-height: 1.4;
+      color: #444;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ✅ ADDED HEADER -->
+<div class="main-header">ENZYMEBASE</div>
+
+<div class="header-box">
+  <div class="header-title">Hexokinase (EC 2.7.1.1)</div>
+  <button class="download-button" onclick="window.print()">Download PDF</button>
+</div>
+
+<div class="content">
+
+  <!-- ✅ ONLY THIS LINE FIXED -->
+  <div class="image-container">
+    <figure>
+      <img src="http://localhost/enzymebase/images/hexokinase_img.jpg" alt="Hexokinase Structure">
+      <figcaption>Hexokinase Structure</figcaption>
+    </figure>
+  </div>
+
+  <!-- ✅ ALL YOUR ORIGINAL CONTENT KEPT -->
+  <div class="text-content">
+
+    <h2>Accepted Name</h2>
+    <p>Hexokinase</p>
+
+    <h2>Other Names</h2>
+    <p>Glucokinase, D-hexokinase, glucose kinase, ATP:D-hexose 6-phosphotransferase, hexose kinase</p>
+
+    <h2>Comments</h2>
+    <p>
+      Catalyzes the phosphorylation of glucose and other hexoses. It’s a key enzyme in glycolysis. 
+      Several isoenzymes exist in mammals with tissue-specific functions. The liver isoform (glucokinase) 
+      has lower affinity for glucose.
+    </p>
+
+    <h2>Function and Importance</h2>
+    <p>
+      Hexokinase initiates the glycolytic pathway by phosphorylating glucose to glucose-6-phosphate, which traps glucose inside the cell and marks it for metabolism.
+      This step is crucial because it regulates the flow of glucose into energy-producing pathways and other biosynthetic routes.
+    </p>
+
+    <ul>
+      <li>Essential for cellular energy production.</li>
+      <li>Regulates glucose homeostasis.</li>
+      <li>Different isoforms adapted for tissues with varying glucose demands.</li>
+      <li>Glucokinase acts as a glucose sensor in pancreatic beta cells.</li>
+    </ul>
+
+    <h2>Structure Details</h2>
+    <p>
+      Hexokinase is a globular protein composed of two similar domains, each capable of binding glucose and ATP. The enzyme undergoes a conformational change upon substrate binding, which facilitates catalysis.
+      The structure allows precise positioning of substrates to transfer the phosphate group efficiently.
+    </p>
+
+    <p>
+      The enzyme's active site contains amino acid residues that interact with glucose and ATP, stabilizing the transition state and lowering activation energy.
+    </p>
+
+  </div>
+</div>
+
+</body>
+</html>

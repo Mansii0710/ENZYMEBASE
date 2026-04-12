@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Organisms</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f4f8;
+      color: #333;
+    }
+
+    .header-box {
+      background-color: #0077cc;
+      border-bottom: 4px solid #005fa3;
+      padding: 25px 10px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .header-title {
+      font-size: 52px;
+      color: white;
+      margin: 0;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    .heading {
+      font-size: 52px;
+      color: #0077cc;
+      margin: 20px auto 10px;
+      text-align: center;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    .subheading {
+      font-size: 20px;
+      color: #0077cc;
+      text-align: center;
+      margin-top: 10px;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    form {
+      text-align: center;
+      margin: 30px auto;
+    }
+
+    select, input[type="text"], button {
+      padding: 15px;
+      border: 2px solid #0077cc;
+      border-radius: 5px;
+      font-size: 16px;
+      margin: 0 10px 10px;
+    }
+
+    input[type="text"] {
+      width: 250px;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    button {
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      font-family: 'Trebuchet MS', sans-serif;
+    }
+
+    .facts-section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-left: 6px solid #0077cc;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #e1f0ff;
+      margin-top: auto;
+      padding: 20px 0;
+    }
+
+    .info1 {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .icon-text {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .icon-text img {
+      height: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header-box">
+    <div class="header-title">ENZYMEBASE</div>
+  </div>
+
+  <div class="heading">ORGANISMS</div>
+  <h1 class="subheading">Explore organisms that produce or interact with enzymes</h1>
+
+  <!-- ✅ FIXED SEARCH -->
+  <form action="../search/search_organism.php" method="GET">
+    <select name="column">
+      <option value="org_id">Organism ID</option>
+      <option value="enzyme_id">Enzyme ID</option>
+      <option value="sci_name">Scientific Name</option>
+      <option value="comm_name">Common Name</option>
+      <option value="tax_id">Taxonomy ID</option>
+    </select>
+
+    <input type="text" name="query" placeholder="Search value..." required>
+
+    <button type="submit">Search</button>
+  </form>
+
+  <div class="facts-section">
+    <h3>Did You Know?</h3>
+    <p>Organisms are the primary source of enzymes used in biotechnology.</p>
+    <p>Biodiversity plays a key role in enzyme discovery.</p>
+  </div>
+
+  <footer>
+    <div class="info1">
+
+      <!-- ✅ FIXED IMAGE PATHS -->
+      <div class="icon-text">
+        <img src="../images/call.png">
+        <span>+91 94XXXXXX70</span>
+      </div>
+
+      <div class="icon-text">
+        <img src="../images/email.png">
+        <span>enzymebasequeries@gmail.com</span>
+      </div>
+
+      <div class="icon-text">
+        <img src="../images/address.png">
+        <span>Manipal, India</span>
+      </div>
+
+      <div class="icon-text">
+        <img src="../images/linkedin.png">
+        <span>ENZYMEBASE</span>
+      </div>
+
+    </div>
+
+    <p>&copy; 2025 ENZYMEBASE Project</p>
+  </footer>
+
+</body>
+</html>

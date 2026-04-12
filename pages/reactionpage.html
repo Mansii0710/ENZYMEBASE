@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reaction</title>
+
+<style>
+.heading {
+    font-size: 52px;
+    color: #0077cc;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    color: #333;
+    margin: 0;
+}
+
+.header-box {
+    background-color: #0077cc;
+    border-bottom: 4px solid #005fa3;
+    padding: 25px 10px;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 52px;
+    color: white;
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+/* ✅ SEARCH BAR FIX */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.search-container form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-container select,
+.search-container input {
+    padding: 10px;
+    border: 2px solid #0077cc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #005fa3;
+}
+
+.facts-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 6px solid #0077cc;
+}
+
+footer {
+    text-align: center;
+    background-color: #e1f0ff;
+    margin-top: auto;
+    padding: 15px 0;
+}
+
+.info1 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.icon-text {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ✅ ICON SIZE FIX */
+.icon-text img {
+    width: 20px;
+    height: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header-box">
+  <div class="header-title">ENZYMEBASE</div>
+</div>
+
+<main>
+
+<div class="heading">REACTIONS</div>
+
+<h2 style="text-align:center;color:#0077cc;">
+Explore enzyme-driven biochemical reactions
+</h2>
+
+<!-- ✅ UPDATED SEARCH -->
+<div class="search-container">
+<form action="../search/search_reaction.php" method="GET">
+
+<select name="column">
+  <option value="reac_id">Reaction ID</option>
+  <option value="enzyme_id">Enzyme ID</option>
+  <option value="substrate">Substrate</option>
+  <option value="product">Product</option>
+  <option value="pathway">Pathway</option>
+</select>
+
+<input type="text" name="query" placeholder="Search reactions..." required>
+
+<button type="submit">Search</button>
+
+</form>
+</div>
+
+<div class="facts-section">
+<h3>Did You Know?</h3>
+<p>Enzymes speed up reactions millions of times.</p>
+<p>They are highly specific catalysts.</p>
+</div>
+
+</main>
+
+<footer>
+<div class="info1">
+
+<div class="icon-text">
+<img src="../images/call.png">
+<span>+91 94XXXXXX70</span>
+</div>
+
+<div class="icon-text">
+<img src="../images/email.png">
+<span>enzymebasequeries@gmail.com</span>
+</div>
+
+<div class="icon-text">
+<img src="../images/address.png">
+<span>Manipal, India</span>
+</div>
+
+<div class="icon-text">
+<img src="../images/linkedin.png">
+<span>ENZYMEBASE</span>
+</div>
+
+</div>
+
+<p>&copy; 2025 ENZYMEBASE Project</p>
+</footer>
+
+</body>
+</html>
