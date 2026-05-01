@@ -28,7 +28,7 @@ enzymebase/
 ├── search/              Search functionality  
 ├── pages/               Front-end pages (enzyme, kinetics, cofactors, organisms, reactions)  
 ├── images/              Icons and images used in UI  
-├── index.php            Main entry point  
+└── index.php            Main entry point  
 
 --------------------------------------------------
 
